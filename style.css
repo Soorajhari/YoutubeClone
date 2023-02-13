@@ -1,24 +1,24 @@
 
- /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,700&display=swap') */
-
+ 
 *{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
-
-  body{
-    font-family: 'Roboto', sans-serif;
-
-  }
 
   nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    
+    position: fixed;
+    top: 0;
+    left: 60PX;
+    width: 100%;
+    background-color: white;
+    z-index: 200;
   }
 
 .logo img{
@@ -83,7 +83,9 @@
   display: flex;
   padding: 10px 20px;
   gap: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid;
+  border-color: #ccc transparent #ccc transparent;
+  margin-top: 110PX;
 }
 
 
@@ -103,6 +105,7 @@
 .container{
   display: flex;
 
+
 }
 
 
@@ -112,6 +115,10 @@ aside{
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  
 
 
 }
@@ -135,6 +142,7 @@ aside{
 
 .main-container{
   width: 100%;
+  margin-left: 70px;
 }
 
 section{
@@ -145,11 +153,15 @@ section{
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
+overflow:hidden;
 
 
 }
+.images {
+  height: 300px;
+}
  .images img{
-  padding: 10px;
+  margin: 10px;
   width: 320px;
  }
 
@@ -163,7 +175,7 @@ justify-content: space-between;
 
 .content{
   position: relative;
-  top: -80px;
+  top: -100px;
   right: -90px;
 }
 .content p{
